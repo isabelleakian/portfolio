@@ -4,10 +4,49 @@ html, body {
     padding: 0;
 }
 
-img {
+html {
+    background-color: #F5F4EB;
+}
+
+/* img {
     padding: 0;
     display: block;
     margin: 0 auto;
     max-height: 100%;
     max-width: 100%;
+} */
+
+img.profile {
+    width: 35%;
+    float: right;
+    padding-top: 3%;
+    padding-right: 6%;
+}
+
+nav {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    color: #274B27;
+    padding-top: 1%;
+}
+
+a.nav {
+    color: #274B27;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-decoration: none;
+}
+
+a.active {
+    color: #802803;
+}
+
+p.bio {
+    padding-left: 8%;
+    padding-top: 10%;
+    text-align: left;
+    color: #274B27;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 270%;
 }
