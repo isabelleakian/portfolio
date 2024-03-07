@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 10%;
+    padding-bottom: 20;
 }
 
 html {
@@ -17,10 +17,18 @@ html {
 } */
 
 img.profile {
-    width: 35%;
+    width: 40%;
     float: right;
     padding-top: 3%;
-    padding-right: 6%;
+    padding-right: 3%;
+}
+
+img.profile2 {
+    width: 40%;
+    float: left;
+    padding-top: 3%;
+    padding-right: 3%;
+    filter: drop-shadow(1px 1px)
 }
 
 nav {
@@ -44,10 +52,69 @@ a.active {
 
 p.bio {
     padding-left: 8%;
-    padding-top: 10%;
+    padding-right: 8%;
+    padding-top: 9%;
     text-align: left;
     color: #274B27;
     font-family: 'Courier New', Courier, monospace;
     font-size: 270%;
     line-height: 135%;
+}
+
+p.bio2 {
+    padding-left: 8%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    padding-right: 8%;
+    text-align: left;
+    color: #274B27;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 250%;
+    line-height: 135%;
+}
+
+p.bio3 {
+    padding-left: 8%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    padding-right: 8%;
+    text-align: left;
+    color: #274B27;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 250%;
+    line-height: 135%;
+}
+
+
+/* base button CSS from https://getcssscan.com/css-buttons-examples */
+.button-54 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin-left: 6%;
+  /* margin-top: 4%; */
+  margin-right: 6%;
+  text-transform: uppercase;
+  color: #274B27;
+  cursor: pointer;
+  border: 3px solid;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  color: #802803;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.3em 0.8em;
+  }
 }
