@@ -4,7 +4,7 @@ html, body {
     padding-bottom: 20;
 }
 
-html {
+html, body {
     background-color: #F5F4EB;
 }
 
@@ -32,7 +32,7 @@ img.profile2 {
 }
 
 
-nav {
+nav.navig {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 150%;
@@ -40,7 +40,7 @@ nav {
     padding-top: 1%;
 }
 
-a.nav {
+a.navig {
     color: #274B27;
     padding-left: 2%;
     padding-right: 2%;
@@ -96,6 +96,7 @@ p.bio3 {
   margin-left: 6%;
   /* margin-top: 4%; */
   margin-right: 6%;
+  padding: 0.3em 0.8em;
   text-transform: uppercase;
   color: #274B27;
   cursor: pointer;
@@ -114,8 +115,18 @@ p.bio3 {
   left: 5px;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .button-54 {
     padding: 0.3em 0.8em;
   }
+} */
+
+@media (max-width: 1000px) {
+    .button-54 {
+        margin-left: 0%;
+        margin-top: 10%;
+        margin-bottom:10%;
+        margin-right: 0%;
+        line-height: 300%;
+    }
 }
