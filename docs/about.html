@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <nav>
+    <nav class="navig">
         <strong>
-        <a class="nav" href="https://www.isabelleakian.com">Home</a>
-        <a class="nav active" href="https://www.isabelleakian.com/about">About Me</a>
-        <a class="nav" href="https://www.isabelleakian.com/projects">Projects</a>
-        <a class="nav" href="https://www.isabelleakian.com/extras">Extras</a>
+        <a class="navig" href="https://www.isabelleakian.com">Home</a>
+        <a class="navig active" href="https://www.isabelleakian.com/about">About Me</a>
+        <a class="navig" href="https://www.isabelleakian.com/projects">Projects</a>
+        <a class="navig" href="https://www.isabelleakian.com/extras">Extras</a>
     </strong>
     </nav>
 
@@ -20,11 +21,13 @@
             <p class="bio">My name is Isabelle, and I am an NYC-based software engineer and UI/UX designer.</p>
             <p class="bio2">I have bachelors degrees from Purdue University in computer engineering and mathematics! I minored in communications, and recently I completed the Columbia University UI/UX bootcamp to learn more about frontend design.</p>
             <p class="bio2">I'm actively interested in projects within the environmental and educational spheres, and I love to teach. I currently teach a weekly computer science workshop for high school students in my neighborhood!</p>    
-            <p align="center">
-                <a class="button-54" href="https://drive.google.com/file/d/1OtAJz4_3G32j_YA0RfrVDXYEIlaiP580/view?usp=sharing" target="_blank" role="button">My Resume</a>
-                <a class="button-54" href="https://www.linkedin.com/in/isabelleakian/" target="_blank" role="button">My LinkedIn</a>
-                <a class="button-54" href="https://github.com/isabelleakian" target="_blank" role="button">My GitHub</a>
-            </p>
+            <div class="container">
+                    <div class="row" style="text-align: center;">
+                        <div class="col-lg"><a class="button-54 navig" href="https://drive.google.com/file/d/1OtAJz4_3G32j_YA0RfrVDXYEIlaiP580/view?usp=sharing" target="_blank" role="button">My Resume</a></div>
+                        <div class="col-lg"><a class="button-54 navig" href="https://www.linkedin.com/in/isabelleakian/" target="_blank" role="button">My LinkedIn</a></div>
+                        <div class="col-lg"><a class="button-54 navig" href="https://github.com/isabelleakian" target="_blank" role="button">My GitHub</a></div>
+                    </div>
+            </div>
             <img src="images/isabelle_plant_polaroid.png" alt="Polaroid of Isabelle's plants" class="profile2">
             <p class="bio3">Lately, my hobbies include knitting, crocheting, running, and tending to my plant window!</p>
             <p class="bio2" padding-bottom=2%>Contact me via email at <strong>isabelle.akian@gmail.com</strong></p>
