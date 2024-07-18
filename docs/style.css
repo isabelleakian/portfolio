@@ -47,6 +47,13 @@ a.navig {
     text-decoration: none;
 }
 
+a.navig:hover {
+	color: #8c3d1c;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-decoration: none;
+}
+
 a.active {
     color: #802803;
 }
@@ -60,6 +67,29 @@ p.bio {
     font-family: 'Courier New', Courier, monospace;
     font-size: 270%;
     line-height: 135%;
+}
+
+p.biotab {
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 2%;
+	text-align: left;
+	color: #274B27;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 270%;
+	line-height: 135%;
+}
+
+p.biotabContent {
+	padding-left: 3%;
+	padding-top: 1%;
+	padding-bottom: 2%;
+	padding-right: 3%;
+	text-align: left;
+	color: #274B27;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 170%;
+	line-height: 135%;
 }
 
 p.bio2 {
@@ -106,6 +136,11 @@ p.bio3 {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+	/* margin-bottom: 15%; */
+}
+
+.button-54:hover {
+  color: #802803;
 }
 
 .button-54:active {
@@ -120,6 +155,81 @@ p.bio3 {
     padding: 0.3em 0.8em;
   }
 } */
+
+/* Style the tab */
+.tab {
+	overflow: hidden;
+	border: 1px solid #802803;
+	background-color: #F5F4EB;
+	font-family: Courier;
+	color: #274B27;
+	margin-top: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+	font-family: Courier;
+	color: #274B27;
+	text-align: center;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: #f2e9e5;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	background-color: #e5d4cc;
+	color: #802803;
+	font-weight: bold;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #802803;
+	border-top: none;
+	color: #274B27;
+	background-color: #F5F4EB;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+div.vids{
+	float: right;
+	text-align: center;
+	padding-bottom: 5%;
+}
+
+video.mobile{
+	width: 60%;
+}
+
+@media only screen and (max-width: 1000px) {
+	div.vids {
+		float: center;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+	video.mobile{
+		width: 100%;
+	}
+
+}
+
 
 @media only screen and (min-width:700px) and (max-width: 1000px) {
     .button-54 {
@@ -136,7 +246,10 @@ p.bio3 {
     p.bio{
         font-size: 200%;
     }
-    p.bio2, p.bio3{
+		p.biotab{
+				font-size: 200%;
+		}
+    p.bio2, p.bio3, p.biotabContent{
         font-size: 160%;
     }
     img.profile, img.profile2{
@@ -160,9 +273,19 @@ p.bio3 {
     p.bio{
         font-size: 170%;
     }
-    p.bio2, p.bio3{
+		p.biotab{
+				font-size: 170%;
+		}
+    p.bio2, p.bio3, p.biotabContent{
         font-size: 130%;
     }
+		.tab button {
+				font-size: 80%;
+		}
+		.tabcontent {
+				font-size: 80%;
+				padding: 3px 6px;
+		}
     img.profile, img.profile2{
         width: 50%;
         padding-right: 0%;
