@@ -15,13 +15,14 @@
     </nav>
 
     <body>
+        <p class="bio">Select a project from the tabs below:</p>
         <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'WizWealth')">WizWealth</button>
+            <button class="tablinks" onclick="openTab(event, 'WizWealth')" id="defaultOpen">WizWealth</button>
             <button class="tablinks" onclick="openTab(event, 'Lake Erie')">Lake Erie</button>
             <!-- <button class="tablinks" onclick="openTab(event, 'Green Guru')">Green Guru</button> -->
         </div>
         <div id="Lake Erie" class="tabcontent">
-            <p class="biotab">UI/UX Case Study: Lake Erie Nature and Science Center</p>
+            <p class="biotab"><strong>UI/UX Case Study: Lake Erie Nature and Science Center</strong></p>
             <p class="biotabContent">For this case study, I worked in a group to redesign 
                 the website for the Lake Erie Nature and Science Center in Bay Village, Ohio. 
                 We went through the full UI design process, starting with creating user personas 
@@ -57,7 +58,7 @@
             
         </div>
         <div id="WizWealth" class="tabcontent">
-            <p class="biotab">UI/UX Design Challenge: WizWealth - A Financial Literacy App for Young Adults</p>
+            <p class="biotab"><strong>UI/UX Design Challenge: WizWealth - A Financial Literacy App for Young Adults</strong></p>
             <p class="biotabContent">For this project, I worked in a group to create a high value educational app for 
                 young adults looking to improve their financial literacy. We identified personal finance as a subject 
                 area in which many young people feel undereducated, and while there are plenty of resources online, we 
@@ -127,6 +128,7 @@
               document.getElementById(tabName).style.display = "block";
               evt.currentTarget.className += " active";
             }
+            document.getElementById("defaultOpen").click();
         </script>
     </body>
 
